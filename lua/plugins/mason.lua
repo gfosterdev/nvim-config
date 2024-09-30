@@ -4,7 +4,7 @@ return {
     opts = {
       ensure_installed = {
         "eslint-lsp",
-        "pretterd",
+        "prettierd",
         "stylua",
         "sql-formatter",
       },
