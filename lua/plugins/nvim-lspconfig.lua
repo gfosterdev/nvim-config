@@ -1,6 +1,6 @@
 return {
   "neovim/nvim-lspconfig",
-  opts = function()
+  init = function()
     local keys = require("lazyvim.plugins.lsp.keymaps").get()
     keys[#keys + 1] = {
       "<leader>cr",
@@ -13,4 +13,7 @@ return {
       has = "rename",
     }
   end,
+  opts = {
+    inlay_hints = { enabled = false },
+  },
 }
